@@ -1,0 +1,23 @@
+<div *ngIf="selectedClient">
+  <h2>
+    {{selectedClient.name | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+
+</div>
+
+<div *ngIf="selectedClient">
+  <button (click)="delete()">Delete Client</button>
+</div>
+
+<h2>Clients</h2>
+<ol class="students">
+  <li *ngFor="let client of clients "
+      [class.selected]="client === selectedClient"
+      (click)="onSelect(client)">
+    {{client.name}}
+  </li>
+</ol>
+
+<button (click)="goToAdd()"> Add Client </button>
+

@@ -1,0 +1,21 @@
+[2019-04-15 08:57:17] [info] Start Program:
+Path:"C:\Users\Alex\Desktop\OOP\Ass5-6\Ass05-06\x64\Debug\Ass05-06.exe"
+Arguments:
+Working directory: "C:\Users\Alex\Desktop\OOP\Ass5-6\Ass05-06\Ass05-06\"
+Modules: Selected: C:\Users\Alex\Desktop\OOP\Ass5-6\Ass05-06\x64\Debug\Ass05-06.exe Excluded: 
+Sources: Selected: C:\Users\Alex\Desktop\OOP\Ass5-6\Ass05-06\Ass05-06 Excluded: UI.cpp 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Alex\AppData\Local\Temp\frngy2bf.p3c 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2019-04-15 08:57:17] [info] Module: C:\Users\Alex\Desktop\OOP\Ass5-6\Ass05-06\x64\Debug\Ass05-06.exe is selected because it matches selected pattern: C:\Users\Alex\Desktop\OOP\Ass5-6\Ass05-06\x64\Debug\Ass05-06.exe
+[2019-04-15 08:57:18] [info] ----------------------------------------------------
+[2019-04-15 08:57:18] [info] Coverage binary generated in file: C:\Users\Alex\AppData\Local\Temp\frngy2bf.p3c
+[2019-04-15 08:57:18] [info] ----------------------------------------------------

@@ -1,0 +1,14 @@
+<div>
+  <h2>Add details for a sale </h2>
+  <div>
+    <label>bookId : </label>
+    <input #bookId >
+  </div>
+  <div>
+    <label>clientId: </label>
+    <input #clientId >
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save(bookId.value, clientId.value)">Save</button>
+</div>
+

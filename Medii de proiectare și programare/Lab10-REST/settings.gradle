@@ -1,0 +1,5 @@
+rootProject.name = 'untitled'
+include 'core'
+include 'client'
+include 'web'
+

@@ -1,0 +1,4 @@
+﻿cl : Command line warning D9025: overriding '/sdl' with '/GS-'
+  Repo.cpp
+  Ass05-06.vcxproj -> C:\Users\Alex\Desktop\OOP\Ass5-6\Ass05-06\x64\Debug\Ass05-06.exe
+c:\users\alex\desktop\oop\ass5-6\ass05-06\ass05-06\repo.cpp(42): warning C26451: Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).

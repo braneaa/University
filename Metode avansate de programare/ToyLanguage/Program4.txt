@@ -1,0 +1,90 @@
+[Program State:{executionStack = {(string varf;(varf=test.in;(open(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))))|}
+symbolTable = {}
+output = {}
+}]
+
+[Program State:{executionStack = {(varf=test.in;(open(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))))|string varf|}
+symbolTable = {}
+output = {}
+}]
+
+[Program State:{executionStack = {(varf=test.in;(open(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))))|}
+symbolTable = {varf -> ;}
+output = {}
+}]
+
+[Program State:{executionStack = {(open(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))|varf=test.in|}
+symbolTable = {varf -> ;}
+output = {}
+}]
+
+[Program State:{executionStack = {(open(varf);(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))))|}
+symbolTable = {varf -> test.in;}
+output = {}
+}]
+
+[Program State:{executionStack = {(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))|open(varf)|}
+symbolTable = {varf -> test.in;}
+output = {}
+}]
+
+[Program State:{executionStack = {(int varc;(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf))))))|}
+symbolTable = {varf -> test.in;}
+output = {}
+}]
+
+[Program State:{executionStack = {(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))|int varc|}
+symbolTable = {varf -> test.in;}
+output = {}
+}]
+
+[Program State:{executionStack = {(read(varf,varc);(print(varc);(read(varf,varc);(print(varc);close(varf)))))|}
+symbolTable = {varf -> test.in;varc -> 0;}
+output = {}
+}]
+
+[Program State:{executionStack = {(print(varc);(read(varf,varc);(print(varc);close(varf))))|read(varf,varc)|}
+symbolTable = {varf -> test.in;varc -> 0;}
+output = {}
+}]
+
+[Program State:{executionStack = {(print(varc);(read(varf,varc);(print(varc);close(varf))))|}
+symbolTable = {varf -> test.in;varc -> 15;}
+output = {}
+}]
+
+[Program State:{executionStack = {(read(varf,varc);(print(varc);close(varf)))|print(varc)|}
+symbolTable = {varf -> test.in;varc -> 15;}
+output = {}
+}]
+
+[Program State:{executionStack = {(read(varf,varc);(print(varc);close(varf)))|}
+symbolTable = {varf -> test.in;varc -> 15;}
+output = {15 }
+}]
+
+[Program State:{executionStack = {(print(varc);close(varf))|read(varf,varc)|}
+symbolTable = {varf -> test.in;varc -> 15;}
+output = {15 }
+}]
+
+[Program State:{executionStack = {(print(varc);close(varf))|}
+symbolTable = {varf -> test.in;varc -> 50;}
+output = {15 }
+}]
+
+[Program State:{executionStack = {close(varf)|print(varc)|}
+symbolTable = {varf -> test.in;varc -> 50;}
+output = {15 }
+}]
+
+[Program State:{executionStack = {close(varf)|}
+symbolTable = {varf -> test.in;varc -> 50;}
+output = {15 50 }
+}]
+
+[Program State:{executionStack = {}
+symbolTable = {varf -> test.in;varc -> 50;}
+output = {15 50 }
+}]
+

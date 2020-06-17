@@ -1,0 +1,108 @@
+Program State:{executionStack = {(bool a;(int v;(a=true;(If a then v=2 else v=3;print(v)))))|}
+symbolTable = {}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int v;(a=true;(If a then v=2 else v=3;print(v))))|bool a|}
+symbolTable = {}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int v;(a=true;(If a then v=2 else v=3;print(v))))|bool a|}
+symbolTable = {}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int v;(a=true;(If a then v=2 else v=3;print(v))))|}
+symbolTable = {a -> false;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int v;(a=true;(If a then v=2 else v=3;print(v))))|}
+symbolTable = {a -> false;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=true;(If a then v=2 else v=3;print(v)))|int v|}
+symbolTable = {a -> false;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=true;(If a then v=2 else v=3;print(v)))|int v|}
+symbolTable = {a -> false;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=true;(If a then v=2 else v=3;print(v)))|}
+symbolTable = {a -> false;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=true;(If a then v=2 else v=3;print(v)))|}
+symbolTable = {a -> false;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(If a then v=2 else v=3;print(v))|a=true|}
+symbolTable = {a -> false;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(If a then v=2 else v=3;print(v))|a=true|}
+symbolTable = {a -> false;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(If a then v=2 else v=3;print(v))|}
+symbolTable = {a -> true;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(If a then v=2 else v=3;print(v))|}
+symbolTable = {a -> true;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(v)|If a then v=2 else v=3|}
+symbolTable = {a -> true;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(v)|If a then v=2 else v=3|}
+symbolTable = {a -> true;v -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(v)|}
+symbolTable = {a -> true;v -> 2;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(v)|}
+symbolTable = {a -> true;v -> 2;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {}
+symbolTable = {a -> true;v -> 2;}
+heap = {}
+output = {2 }
+}
+

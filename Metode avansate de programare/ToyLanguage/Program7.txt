@@ -1,0 +1,98 @@
+[Program State:{executionStack = {(Ref(int )v;(new( v 20 );(print(rH(v));(Ref(Ref(int ))a;(new( a v );(wH(v 30);print(rH(rH(a))5)))))))|}
+symbolTable = {}
+heap = {}
+output = {}
+}]
+
+[Program State:{executionStack = {(new( v 20 );(print(rH(v));(Ref(Ref(int ))a;(new( a v );(wH(v 30);print(rH(rH(a))5))))))|Ref(int )v|}
+symbolTable = {}
+heap = {}
+output = {}
+}]
+
+[Program State:{executionStack = {(new( v 20 );(print(rH(v));(Ref(Ref(int ))a;(new( a v );(wH(v 30);print(rH(rH(a))5))))))|}
+symbolTable = {v -> int ;}
+heap = {}
+output = {}
+}]
+
+[Program State:{executionStack = {(print(rH(v));(Ref(Ref(int ))a;(new( a v );(wH(v 30);print(rH(rH(a))5)))))|new( v 20 )|}
+symbolTable = {v -> int ;}
+heap = {}
+output = {}
+}]
+
+[Program State:{executionStack = {(print(rH(v));(Ref(Ref(int ))a;(new( a v );(wH(v 30);print(rH(rH(a))5)))))|}
+symbolTable = {v -> int ;}
+heap = {2->20
+}
+output = {}
+}]
+
+[Program State:{executionStack = {(Ref(Ref(int ))a;(new( a v );(wH(v 30);print(rH(rH(a))5))))|print(rH(v))|}
+symbolTable = {v -> int ;}
+heap = {2->20
+}
+output = {}
+}]
+
+[Program State:{executionStack = {(Ref(Ref(int ))a;(new( a v );(wH(v 30);print(rH(rH(a))5))))|}
+symbolTable = {v -> int ;}
+heap = {2->20
+}
+output = {20 }
+}]
+
+[Program State:{executionStack = {(new( a v );(wH(v 30);print(rH(rH(a))5)))|Ref(Ref(int ))a|}
+symbolTable = {v -> int ;}
+heap = {2->20
+}
+output = {20 }
+}]
+
+[Program State:{executionStack = {(new( a v );(wH(v 30);print(rH(rH(a))5)))|}
+symbolTable = {a -> Ref(int );v -> int ;}
+heap = {2->20
+}
+output = {20 }
+}]
+
+[Program State:{executionStack = {(wH(v 30);print(rH(rH(a))5))|new( a v )|}
+symbolTable = {a -> Ref(int );v -> int ;}
+heap = {2->20
+}
+output = {20 }
+}]
+
+[Program State:{executionStack = {(wH(v 30);print(rH(rH(a))5))|}
+symbolTable = {a -> Ref(int );v -> int ;}
+heap = {2->20
+3->int 
+}
+output = {20 }
+}]
+
+[Program State:{executionStack = {print(rH(rH(a))5)|wH(v 30)|}
+symbolTable = {a -> Ref(int );v -> int ;}
+heap = {2->20
+3->int 
+}
+output = {20 }
+}]
+
+[Program State:{executionStack = {print(rH(rH(a))5)|}
+symbolTable = {a -> Ref(int );v -> int ;}
+heap = {2->30
+3->int 
+}
+output = {20 }
+}]
+
+[Program State:{executionStack = {}
+symbolTable = {a -> Ref(int );v -> int ;}
+heap = {2->30
+3->int 
+}
+output = {20 35 }
+}]
+

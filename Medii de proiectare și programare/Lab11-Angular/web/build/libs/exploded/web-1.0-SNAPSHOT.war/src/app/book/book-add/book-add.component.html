@@ -1,0 +1,22 @@
+<div>
+  <h2>Add details for a book </h2>
+  <div>
+    <label>Serial Number: </label>
+    <input #serialnumber >
+  </div>
+  <div>
+    <label>Name: </label>
+    <input #name >
+  </div>
+  <div>
+    <label>Author: </label>
+    <input #author >
+  </div>
+  <div>
+    <label>Genre: </label>
+    <input #genre >
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save(serialnumber.value, name.value, author.value, genre.value)">Save</button>
+</div>
+

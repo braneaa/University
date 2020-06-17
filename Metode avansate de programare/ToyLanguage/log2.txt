@@ -1,0 +1,108 @@
+Program State:{executionStack = {(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))|}
+symbolTable = {}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int b;(a=2+3*5;(b=a+1;print(b))))|int a|}
+symbolTable = {}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int b;(a=2+3*5;(b=a+1;print(b))))|int a|}
+symbolTable = {}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int b;(a=2+3*5;(b=a+1;print(b))))|}
+symbolTable = {a -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(int b;(a=2+3*5;(b=a+1;print(b))))|}
+symbolTable = {a -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=2+3*5;(b=a+1;print(b)))|int b|}
+symbolTable = {a -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=2+3*5;(b=a+1;print(b)))|int b|}
+symbolTable = {a -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=2+3*5;(b=a+1;print(b)))|}
+symbolTable = {a -> 0;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(a=2+3*5;(b=a+1;print(b)))|}
+symbolTable = {a -> 0;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(b=a+1;print(b))|a=2+3*5|}
+symbolTable = {a -> 0;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(b=a+1;print(b))|a=2+3*5|}
+symbolTable = {a -> 0;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(b=a+1;print(b))|}
+symbolTable = {a -> 17;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {(b=a+1;print(b))|}
+symbolTable = {a -> 17;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(b)|b=a+1|}
+symbolTable = {a -> 17;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(b)|b=a+1|}
+symbolTable = {a -> 17;b -> 0;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(b)|}
+symbolTable = {a -> 17;b -> 18;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {print(b)|}
+symbolTable = {a -> 17;b -> 18;}
+heap = {}
+output = {}
+}
+
+Program State:{executionStack = {}
+symbolTable = {a -> 17;b -> 18;}
+heap = {}
+output = {18 }
+}
+

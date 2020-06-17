@@ -1,0 +1,16 @@
+
+
+<div *ngIf="selectedSale">
+  <button (click)="delete()">Delete Sale</button>
+</div>
+
+<h2>Sales</h2>
+<ol class="students">
+  <li *ngFor="let sale of sales "
+      [class.selected]="sale === selectedSale"
+      (click)="onSelect(sale)">
+
+  </li>
+</ol>
+
+<button (click)="goToAdd()"> Add Sale </button>

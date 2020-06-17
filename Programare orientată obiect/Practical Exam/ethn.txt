@@ -1,0 +1,4 @@
+Alex;sector1
+Andrei;sector4
+Mihai;sector2
+Maria;sector3

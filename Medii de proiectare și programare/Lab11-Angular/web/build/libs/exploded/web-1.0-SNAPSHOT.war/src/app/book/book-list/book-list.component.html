@@ -1,0 +1,22 @@
+<div *ngIf="selectedBook">
+  <h2>
+    {{selectedBook.name | uppercase}} was selected
+  </h2>
+  <button (click)="goToDetail()">View Details</button>
+
+</div>
+
+<div *ngIf="selectedBook">
+  <button (click)="delete()">Delete Book</button>
+</div>
+
+<h2>Books</h2>
+<ol class="students">
+  <li *ngFor="let book of books "
+      [class.selected]="book === selectedBook"
+      (click)="onSelect(book)">
+    {{book.name}}
+  </li>
+</ol>
+
+<button (click)="goToAdd()"> Add Book </button>

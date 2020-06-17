@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</head> 
+
+<body>
+
+
+	<img id="img1" src="image1.jfif" height="180" width="230">
+	<img id="img2" src="image2.jpg" height="180" width="230">
+	<img id="img3" src="image3.jpg" height="180" width="230">
+	<img id="img4" src="image4.jpg" height="180" width="230">
+	<img id="img5" src="image5.jpg" height="180" width="230">
+	
+	
+	
+	<script> 
+	
+		$(document).ready(function() {
+        
+        function moveImage(img){
+			img.css('visibility', 'visible');
+			img.css('right', startPos);
+			img.animate({left: 1950}, 8000, 'linear')
+		 
+        };
+	   
+	    function animation()
+	    {
+			moveImage(img1);
+			setTimeout(function(){
+				moveImage(img2);
+				setTimeout(function(){
+					moveImage(img3);
+					setTimeout(function(){
+						moveImage(img4);
+						setTimeout(function(){
+							moveImage(img5);
+						},1500);
+					},1500);
+				},1500);
+			},1500);
+	    }
+       
+        var screenWidth = $(document).width();
+        var startPos = screenWidth;
+        var img1 = $('#img1')
+		var img2 = $('#img2')
+		var img3 = $('#img3')
+		var img4 = $('#img4')
+		var img5 = $('#img5')
+		animation();
+		setInterval(function(){ animation(); }, 40000);
+      });
+	</script> 
+</body>
+
+</html>

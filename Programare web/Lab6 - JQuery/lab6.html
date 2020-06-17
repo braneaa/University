@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script> 
+		$('#prev').on('click', function () {
+			var last = $('.logo').last().css({opacity: '0', width: '0px'});
+			last.prependTo('.showrooms');
+			last.animate({opacity: '1', width: '108px'});
+		});
+		$('#next').on('click', function () {
+			var first = $('.logo').first();
+			first.animate({opacity: '0', width: '0px'}, function() {
+				first.appendTo('.showrooms').css({opacity: '1', width: '108px'});
+			});
+		});
+		
+	</script> 
+</head> 
+
+<body>
+
+
+	<div class="thumbnailgallery">
+		<div class="showrooms"> 
+			<a href="" class="logo"><img id="img1" src="image1.jfif" ></a>
+			<a href="" class="logo"><img id="img2" src="image2.jpg" ></a>
+			<a href="" class="logo"><img id="img3" src="image3.jpg" ></a>
+			<a href="" class="logo"><img id="img2" src="image4.jpg" ></a>
+			<a href="" class="logo"><img id="img2" src="image5.jpg" ></a>
+		
+
+		</div>
+</div>
+
+
+	
+	
+</body>
+
+</html>

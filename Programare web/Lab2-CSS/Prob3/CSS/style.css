@@ -1,0 +1,49 @@
+table {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+th {
+	text-decoration:underline;
+	font-size:70px;
+	font-style:italic;
+	color:grey;
+	padding:20px;
+	background-color: #4CAF50;
+	color: black;
+}
+
+td {
+	padding:20px;
+	border:inset green;
+	
+	position: relative;
+	display: inline-block;
+	
+	background-color:#c7164e
+}
+
+td .p1{
+	visibility: hidden;
+	width: 400px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	
+	position: absolute;
+	z-index: 1;
+	top: 200px;
+	left: 105%;
+}
+
+td:hover .p1{
+	visibility:visible;
+}
+
+.p1{
+	font-size:20px;
+}
+
+

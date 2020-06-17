@@ -1,0 +1,218 @@
+2020-04-28T17:12:19,936 WARN  [HikariPool-1 housekeeper]: HikariPool                           - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23m33s706ms125µs300ns). 
+2020-04-28T17:29:17,971 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23505 
+2020-04-28T17:29:17,973 ERROR [main]: SqlExceptionHelper                   - ERROR: duplicate key value violates unique constraint "book_pk"
+  Detail: Key (id)=(1) already exists. 
+2020-04-28T17:30:47,807 TRACE [main]: BookControllerImpl                   - update book - method entered: book=Book{ serialNumber: 1111
+ name: carte
+ author carte
+ genre: carte}BaseEntity{ id= 2 } 
+2020-04-28T17:30:47,814 DEBUG [main]: BookControllerImpl                   - updateBook - updated book=Book{ serialNumber: 2222
+ name: carte
+ author carte
+ genre: carte}BaseEntity{ id= 2 } 
+2020-04-28T17:30:47,815 TRACE [main]: BookControllerImpl                   - method finished 
+2020-04-29T02:57:20,524 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 42701 
+2020-04-29T02:57:20,561 ERROR [main]: SqlExceptionHelper                   - ERROR: column "id" specified more than once
+  Position: 44 
+2020-04-29T02:58:19,140 WARN  [main]: ExceptionHandlerLoggedImpl           - GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists Client add column clientId int4 not null" via JDBC Statement 
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists Client add column clientId int4 not null" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:580) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) [hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at Laboratory.Config.JPAConfig.entityManagerFactory(JPAConfig.java:63) [main/:?]
+	at Laboratory.Config.JPAConfig$$EnhancerBySpringCGLIB$$4e04d715.CGLIB$entityManagerFactory$3(<generated>) [main/:?]
+	at Laboratory.Config.JPAConfig$$EnhancerBySpringCGLIB$$4e04d715$$FastClassBySpringCGLIB$$a0878d59.invoke(<generated>) [main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) [spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at Laboratory.Config.JPAConfig$$EnhancerBySpringCGLIB$$4e04d715.entityManagerFactory(<generated>) [main/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:479) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1681) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849) [spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:99) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at Laboratory.Main.main(Main.java:12) [main/:?]
+Caused by: org.postgresql.util.PSQLException: ERROR: column "clientid" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2440) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2183) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:308) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:307) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:293) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:270) ~[postgresql-42.2.5.jar:42.2.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:266) ~[postgresql-42.2.5.jar:42.2.5]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-2.7.7.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-2.7.7.jar:?]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.2.Final.jar:5.4.2.Final]
+	... 73 more
+2020-04-29T03:57:42,578 WARN  [main]: AnnotationConfigApplicationContext   - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userInterface': Unsatisfied dependency expressed through field 'saleEntityController'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'Laboratory.Controller.SaleEntityController' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+2020-04-29T03:58:08,056 TRACE [main]: SaleEntityController                 - getAll called 
+2020-04-29T03:58:23,070 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T03:59:04,136 TRACE [main]: ClientController                     - getAllClients called 
+2020-04-29T03:59:07,134 TRACE [main]: BookController                       - getAllBooks called 
+2020-04-29T03:59:13,146 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T03:59:38,951 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T03:59:39,016 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T03:59:39,017 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-04-29T04:00:54,554 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T04:00:54,621 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T04:00:54,621 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-04-29T04:04:23,498 TRACE [main]: SaleEntityController                 - getAll called 
+2020-04-29T04:04:31,507 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T04:04:31,544 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T04:04:31,544 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-04-29T04:07:09,004 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T04:07:09,071 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T04:07:09,071 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "buyid" violates not-null constraint
+  Detail: Failing row contains (1, 1, 1, 1, null). 
+2020-04-29T04:07:55,046 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T04:07:55,118 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T04:07:55,118 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-04-29T04:13:05,518 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T04:13:05,584 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T04:13:05,584 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-04-29T04:14:56,897 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T04:14:56,977 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T04:14:56,978 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "buyid" violates not-null constraint
+  Detail: Failing row contains (1, 1, 1, 1, null). 
+2020-04-29T04:15:22,949 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-04-29T04:15:23,036 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-04-29T04:15:23,036 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "bookid" violates not-null constraint
+  Detail: Failing row contains (1, 1, null, 1, 1). 
+2020-05-04T17:39:34,145 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T17:39:40,143 TRACE [main]: BookController                       - getAllBooks called 
+2020-05-04T17:40:34,939 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T17:40:48,942 TRACE [main]: ClientController                     - saveClient called: client=Client{id: 4
+ name: Name
+ phone number: 24345}BaseEntity{ id= 4 } 
+2020-05-04T17:40:48,977 TRACE [main]: ClientController                     - saveClient successfully executed 
+2020-05-04T17:40:50,943 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T17:41:06,951 TRACE [main]: ClientController                     - updateClient called: client=Client{id: 4
+ name: Andrei
+ phone number: 22221}BaseEntity{ id= 4 } 
+2020-05-04T17:41:06,957 TRACE [main]: ClientController                     - updateClient successfully executed 
+2020-05-04T17:41:11,953 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T17:41:23,958 TRACE [main]: SaleEntityController                 - getAll called 
+2020-05-04T17:41:40,967 TRACE [main]: BookController                       - genreFilter called: genre=Genre1 
+2020-05-04T17:41:44,970 TRACE [main]: BookController                       - getAllBooks called 
+2020-05-04T17:41:53,974 TRACE [main]: BookController                       - genreFilter called: genre=Genre 
+2020-05-04T17:42:05,987 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-05-04T17:42:06,008 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-05-04T17:42:06,008 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-05-04T17:45:13,800 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-05-04T17:45:13,889 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-05-04T17:45:13,890 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-05-04T17:50:30,538 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T17:50:37,546 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-05-04T17:50:37,586 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-05-04T17:50:37,587 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-05-04T18:14:39,111 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 1Client ID: 1Book ID: 1} 
+2020-05-04T18:14:39,217 WARN  [main]: SqlExceptionHelper                   - SQL Error: 0, SQLState: 23502 
+2020-05-04T18:14:39,217 ERROR [main]: SqlExceptionHelper                   - ERROR: null value in column "beid" violates not-null constraint
+  Detail: Failing row contains (1, null, 1, 1, 1). 
+2020-05-04T18:22:35,560 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T18:22:44,583 TRACE [main]: ClientController                     - saveClient called: client=Client{id: 1
+ name: Radu
+ phone number: 12345}BaseEntity{ id= 1 } 
+2020-05-04T18:22:44,635 TRACE [main]: ClientController                     - saveClient successfully executed 
+2020-05-04T18:22:46,561 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T18:22:57,567 TRACE [main]: ClientController                     - saveClient called: client=Client{id: 2
+ name: Alex
+ phone number: 54321}BaseEntity{ id= 2 } 
+2020-05-04T18:22:57,573 TRACE [main]: ClientController                     - saveClient successfully executed 
+2020-05-04T18:22:59,568 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-04T18:23:17,587 TRACE [main]: BookController                       - saveBook called: book=Book{ serialNumber: 22222
+ name: Book1
+ author Author1
+ genre: Genre1}BaseEntity{ id= 1 } 
+2020-05-04T18:23:17,593 TRACE [main]: BookController                       - addBook successfully executed 
+2020-05-04T18:23:19,585 TRACE [main]: BookController                       - getAllBooks called 
+2020-05-04T18:23:47,603 TRACE [main]: SaleEntityController                 - addSale called: sale=BookPurchase{id 2Client ID: 1Book ID: 1} 
+2020-05-04T18:23:47,610 TRACE [main]: SaleEntityController                 - addSale executed successfully 
+2020-05-04T18:23:50,592 TRACE [main]: SaleEntityController                 - getAll called 
+2020-05-04T18:25:06,991 TRACE [main]: SaleEntityController                 - getAll called 
+2020-05-04T18:28:09,352 TRACE [main]: SaleEntityController                 - getAll called 
+2020-05-04T18:28:15,353 TRACE [main]: SaleEntityController                 - bookreport called 
+2020-05-08T18:40:08,147 TRACE [main]: SaleEntityController                 - getAll called 
+2020-05-08T18:49:49,873 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-20T11:13:17,502 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-20T11:13:31,496 TRACE [main]: ClientController                     - saveClient called: client=Client{id: 1
+ name: Alex
+ phone number: 22222222}BaseEntity{ id= 1 } 
+2020-05-20T11:13:31,526 TRACE [main]: ClientController                     - saveClient successfully executed 
+2020-05-20T11:13:34,496 TRACE [main]: ClientController                     - getAllClients called 
+2020-05-20T11:13:51,506 TRACE [main]: ClientController                     - saveClient called: client=Client{id: 2
+ name: Radu
+ phone number: 1111111111}BaseEntity{ id= 2 } 
+2020-05-20T11:13:51,510 TRACE [main]: ClientController                     - saveClient successfully executed 
+2020-05-20T11:14:09,514 TRACE [main]: ClientController                     - saveClient called: client=Client{id: 3
+ name: Andrei
+ phone number: 444444}BaseEntity{ id= 3 } 
+2020-05-20T11:14:09,517 TRACE [main]: ClientController                     - saveClient successfully executed 

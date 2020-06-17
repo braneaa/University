@@ -1,0 +1,17 @@
+.thumbnailgallery {
+    margin-bottom:40px;
+    width:100%;
+    height:108px;
+    overflow:hidden;
+}
+.showrooms a.logo {
+    display:inline-block;
+    float: left;
+}
+
+.showrooms img {
+    margin-bottom:40px;
+    width:100%;
+    height:108px;
+    overflow:hidden;
+}

@@ -1,0 +1,18 @@
+<div>
+  <h2>Add details for a client </h2>
+  <div>
+    <label>Id2 : </label>
+    <input #id2 >
+  </div>
+  <div>
+    <label>Name: </label>
+    <input #name >
+  </div>
+  <div>
+    <label>Phone Number: </label>
+    <input #phoneNumber >
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save(id2.value, name.value, phoneNumber.value)">Save</button>
+</div>
+

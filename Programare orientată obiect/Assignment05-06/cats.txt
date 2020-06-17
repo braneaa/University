@@ -1,0 +1,5 @@
+Siamese,Albert,6,https://bowwowinsurance.com.au/wp-content/uploads/2018/10/siamese-cat-700x700.jpg
+Sphinx,Radu,2,https://images.fineartamerica.com/images-medium-large-5/a-hairless-sphinx-cat-wearing-pearls-james-white.jpg
+Siamese,Monkey,1,https://cdn2-www.cattime.com/assets/uploads/gallery/siamese-cats-and-kittens-pictures/siamese-cat-kitten-picture-5.jpg
+Bengal,Atac,7,https://assets3.thrillist.com/v1/image/2622128/size/tmg-facebook_social.jpg
+Bengal,Dumb,2,https://www.thesprucepets.com/thmb/iAfyrc86hbDAwzHfVxi5gab6Hf8=/1080x1080/filters:no_upscale()/28156510_214510789289294_6148465028203806720_n-5a9605c118ba010037eadf0a.jpg

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ccb9a2ac630d4c5fa070dd63232db7e0" Name="Diagram1">
+        <EntityTypeShape EntityType="recipeModel.recipe" Width="3.375" PointX="1" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="recipeModel.user" Width="2.5" PointX="6.5" PointY="2.875" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
