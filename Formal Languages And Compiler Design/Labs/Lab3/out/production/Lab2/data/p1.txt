@@ -1,0 +1,8 @@
+START
+a, b, c, max (int).
+read a, b, c.
+if : a > max [max = a].
+if : b > max [max = b].
+if : c > max [max = c].
+write max.
+END
