@@ -1,0 +1,19 @@
+START
+
+n ( int ) .
+x ( list ( int ) ) .
+i , sum ( int ) .
+read n , x .
+sum = 0 .
+i = 1 .
+
+
+loop if : i < n
+[
+    sum = sum + x ( i ) .
+	i = i + 1 .
+] .
+
+write sum .
+
+END

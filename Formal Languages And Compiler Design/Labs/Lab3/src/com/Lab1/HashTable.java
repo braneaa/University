@@ -25,7 +25,7 @@ public class HashTable {
     output parameters:
         hash : int
      */
-    private int hash(String string){
+    public int hash(String string){
         int hash = 0;
         for (Character character : string.toCharArray())
             hash += character;
@@ -62,7 +62,7 @@ public class HashTable {
         StringBuilder str = new StringBuilder();
         for(int i = 0; i< capacity; i++){
             str.append(linkedLists[i] == null ?
-                    "At position " + i + ": " + "\n" :
+                    "" :
                     "At position " + i + ": " + linkedLists[i] + "\n");
         }
         return str.toString();

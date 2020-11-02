@@ -1,0 +1,13 @@
+START
+
+a , b , 1c , c ( int ) .
+
+a*b ( int ) .
+
+1c = a*b .
+c = a * b .
+a = 05 .
+
+write 1c , c .
+
+END

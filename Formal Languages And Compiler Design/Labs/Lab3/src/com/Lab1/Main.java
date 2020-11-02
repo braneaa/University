@@ -5,20 +5,13 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
-        //Initialize a new HashTable
-        HashTable hashTable = new HashTable(128);
-
-        MyScanner scanner = new MyScanner("D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab2\\src\\data\\token.in",
-                "D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab2\\src\\data\\p1.txt",
-                "D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab2\\src\\data\\pif.out",
-                "D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab2\\src\\data\\st.out");
-        scanner.readTokens();
+        MyScanner scanner = new MyScanner("D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab3\\src\\data\\token.in",
+                "D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab3\\src\\data\\p3.txt",
+                "D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab3\\src\\data\\pif.out",
+                "D:\\Facultate\\Anul III_Sem1\\FLCD\\Labs\\Lab3\\src\\data\\st.out");
         scanner.scan();
+        System.out.println("LEXICALLY CORRECT!");
     }
-
-
-
-
 }

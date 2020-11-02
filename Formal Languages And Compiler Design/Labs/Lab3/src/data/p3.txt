@@ -1,0 +1,24 @@
+START
+
+n ( int ) .
+read n .
+
+isPrime ( bool ) .
+
+isPrime = true .
+
+
+if : n <= 1
+	 [ isPrime = false ] .
+
+i ( int ) .
+i = 2 .
+
+loop if : i < n
+	if : n % i == 0 [ isPrime = false ] .
+finish .
+
+if : isPrime = true [ write true ] .
+else [ write false ] .
+
+END

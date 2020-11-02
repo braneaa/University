@@ -4,6 +4,7 @@ bool
 str
 list
 char
+"
 -
 +
 *
@@ -15,6 +16,7 @@ char
 <
 >
 :
+%
 .
 ,
 ;
@@ -30,3 +32,5 @@ read
 write
 START
 END
+true
+false
