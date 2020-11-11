@@ -1,10 +1,11 @@
 p,q,r
 
+p
+
 a,b
 
 p,a,q
 q,a,q
 q,b,r
-p,b,r
 
 r
