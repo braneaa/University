@@ -1,7 +1,7 @@
 S,A,B,C
 a,b,d,g,h
 S
-S->ACB|CbB|Ba
-A->da|BC
-B->g
-C->h
+S~A C B|C b B|B a
+A~d a|B C
+B~g
+C~h

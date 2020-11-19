@@ -44,7 +44,7 @@ class Grammar {
 
             while(scanner.hasNextLine()) {
                 data = scanner.nextLine();
-                StringTokenizer production = new StringTokenizer(data, "->");
+                StringTokenizer production = new StringTokenizer(data, "~");
                 String leftValue = production.nextToken();
                 String rightValues = production.nextToken();
                 StringTokenizer secondTokenizer = new StringTokenizer(rightValues, "|");

@@ -1,0 +1,23 @@
+program,decllist,declaration,type,type1,listdecl,cmpdstmt,stmt,simplstmt,iostmt,assignstmt,structstmt,whilestmt,ifstmt,condition,expr,term,factor,relation,operation
+START,.,END,;,IDENTIFIER,(,),bool,char,str,float,int,[,],{,},read,write,=,loop,if,:,+,-,*,/,<,<=,>,>=,<>
+program
+program~START decllist . cmpdstmt END
+decllist~declaration | declaration ; decllist
+declaration~IDENTIFIER ( type ) .
+type~type1|listdecl
+type1~bool | char | str | float | int
+listdecl~list ( type1 )
+cmpdstmt~[ {stmt} ]
+stmt~simplstmt | structstmt .
+simplstmt~iostmt | assignstmt
+iostmt~read | write identifier .
+assignstmt~IDENTIFIER = expr .
+structstmt~cmpdstmt|ifstmt|whilestmt
+whilestmt~loop ifstmt
+ifstmt~if : condition [ cmpdstmt ] .
+condition~expr relation expr
+expr~[ exp ( + | - ] term .
+term~term ( * | / ) factor | factor .
+factor~( expr ) | IDENTIFIER
+relation~< | <= | = | <> | >= | >
+operation~+ | - | * | /
