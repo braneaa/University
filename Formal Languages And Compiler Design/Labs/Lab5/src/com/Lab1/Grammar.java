@@ -96,4 +96,39 @@ class Grammar {
             }
         }
     }
+
+    void menu(){
+        System.out.println("1. Print the set of nonterminals");
+        System.out.println("2. Print the set of terminals");
+        System.out.println("3. Print the starting symbol");
+        System.out.println("4. Print all productions");
+        System.out.println("5. Print the production for a certain nonterminal");
+        System.out.println("0. Exit");
+    }
+
+    void run(){
+        this.menu();
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        while (x!=0){
+            if(x == 1){
+                printNonterminals();
+            }
+            if(x == 2){
+                printTerminals();
+            }
+            if (x == 3){
+                printStartingSymbol();
+            }
+            if(x == 4){
+                printProductions();
+            }
+            if (x == 5){
+                printProduction(scanner.next());
+            }
+
+            this.menu();
+            x = scanner.nextInt();
+        }
+    }
 }

@@ -5,11 +5,7 @@ import java.io.File;
 public class Main {
 
     public static void main(String[] args) {
-        Grammar grammar = new Grammar(new File("data/g2.txt"));
-        grammar.printProductions();
-        grammar.printNonterminals();
-        grammar.printTerminals();
-        grammar.printStartingSymbol();
-        grammar.printProduction("program");
+        Grammar grammar = new Grammar(new File("data/g1.txt"));
+        grammar.run();
     }
 }
