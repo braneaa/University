@@ -1,0 +1,69 @@
+%{
+#include <math.h> 
+#include <stdio.h>
+
+%}
+
+%option noyywrap
+
+BIGLETTER	[A-Z]
+SMALLLETTER	[a-z]
+DIGIT	[0-9]
+NONZERODIGIT	[1-9]
+LETTER	{BIGLETTER}|{SMALLLETTER}
+IDENTIFIER	{LETTER}({LETTER}|{DIGIT})*
+CHAR	{LETTER}|{DIGIT}
+STRING	{CHAR}{STRING}*
+INTEGER	0|{NONZERODIGIT}{DIGIT}*
+
+%%
+
+[ \t\n]
+"START"	{printf("Reserved Word: %s\n", yytext);}
+"END"	{printf("Reserved Word: %s\n", yytext);}
+"read"	{printf("Reserved Word: %s\n", yytext);}
+"write"	{printf("Reserved Word: %s\n", yytext);}
+"if"	{printf("Reserved Word: %s\n", yytext);}
+"loop"	{printf("Reserved Word: %s\n", yytext);}
+"finish"	{printf("Reserved Word: %s\n", yytext);}
+"else"	{printf("Reserved Word: %s\n", yytext);}
+"int"	{printf("Reserved Word: %s\n", yytext);}
+"char"	{printf("Reserved Word: %s\n", yytext);}
+"str"	{printf("Reserved Word: %s\n", yytext);}
+"bool"	{printf("Reserved Word: %s\n", yytext);}
+"list"	{printf("Reserved Word: %s\n", yytext);}
+"float"	{printf("Reserved Word: %s\n", yytext);}
+"-"	    {printf("Operator: %s\n", yytext);}
+"+"	    {printf("Operator: %s\n", yytext);}
+"*"	    {printf("Operator: %s\n", yytext);}
+"/"	    {printf("Operator: %s\n", yytext);}
+"<="	{printf("Operator: %s\n", yytext);}
+">="	{printf("Operator: %s\n", yytext);}
+"=="	{printf("Operator: %s\n", yytext);}
+"="	    {printf("Operator: %s\n", yytext);}
+"<"	    {printf("Operator: %s\n", yytext);}
+">"	    {printf("Operator: %s\n", yytext);}
+"["	    {printf("Operator: %s\n", yytext);}
+"]"	    {printf("Operator: %s\n", yytext);}
+"("	    {printf("Operator: %s\n", yytext);}
+")" 	{printf("Operator: %s\n", yytext);}
+":"	    {printf("Separator: %s\n", yytext);}
+"."	    {printf("Separator: %s\n", yytext);}
+","	    {printf("Separator: %s\n", yytext);}
+{IDENTIFIER}	{printf("IDENTIFIER: %s\n", yytext);}
+{INTEGER}	{printf("INTEGER: %s\n", yytext);}
+
+%%
+int main( argc, argv ) 
+int argc; 
+char **argv; 
+{ 
+    ++argv, --argc; /* skip over program name */ 
+    if ( argc > 0 ) 
+    yyin = fopen( argv[0], "r" ); 
+    else 
+     yyin = stdin; 
+    yylex(); 
+} 
+
+
