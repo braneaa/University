@@ -11,7 +11,7 @@ public class TestApp {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         assertFalse(false);
     }
 }
